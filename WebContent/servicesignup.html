@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body{
+background-image:url("bgimg1.jpg");
+background-size:100%; 
+}
+.wrap{
+	width:350px;
+	margin:auto;
+	background: #00adee;
+	margin-top:50px;
+	padding:5px;
+}
+form{
+	padding:10px;
+	font-family:arial;
+	border: 1px dotted white;
+	margin:10px;
+}
+h2{
+	text-align:center;
+	background:orange;
+	color:white;
+	padding:10px;
+	border-radius: 10px;
+	
+}
+input{
+	padding:10px;
+	margin:10px;
+	border-radius:5px;
+	border:none;
+}
+input[type=text],input[type=email],input[type=number],input[type=password]
+{
+	width:90%
+}
+input[type=date]
+{
+	width:50%;
+}
+input[type=submit]{
+	width:95%;
+	background:orange;
+	cursor:pointer;
+	font-size: 18px;
+	font-weight:bold;
+	color:white;
+}
+textarea{
+	padding-left:30px;
+	width:90%
+}
+input[type=submit]:hover
+{
+background:yellow;
+}
+</style>
+</head>
+<body>
+<h1 align="center">Professionl Registration</h1>
+<hr>
+<div class="wrap">
+<form action="ServiceSignUp">
+
+
+<input type="text" name="sfname" placeholder="Enter First Name" required/>
+
+
+<input type="text" name="slname"  placeholder="Enter Last Name" required/>
+
+
+<input type="text" name="suname" placeholder="Enter Email" required/>
+
+
+<input type="password" name="spwd" placeholder="Enter Password" required/>
+
+
+<input type="password" name="scpwd" placeholder="Confirm Password" required/>
+
+
+<input type="number" name="scontact" placeholder="Enter Contact" required>
+
+
+<input type="text" name="saddress" placeholder="Enter Address" required>
+<!--  
+<textarea rows="2" column="50" name="address" placeholder="Enter Address"></textarea>
+-->
+	<input type="radio" name="sgender" value="Male">Male
+	<input type="radio" name="sgender" value="Female">Female
+	
+
+<br>
+<span style="font-size:18px;">  Date Of Birth</span>
+<input type="date" name="sdob" placeholder="" required/>
+<br>
+<!--  
+<input type="number" name="syoe" placeholder="Your Year Of Experience" required>
+
+
+<input type="number" name="snoj" placeholder="Number Of Jobs Completed" required>
+-->
+
+<input type="number" name="san" placeholder="Enter Aadhar Number" required>
+
+<input type="submit" value="Register" />
+
+<input type="checkbox" required>I accept all T&C
+</form>
+</div>
+</body>
+</html>
